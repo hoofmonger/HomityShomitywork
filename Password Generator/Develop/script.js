@@ -47,7 +47,8 @@ chosenValues.push.getRandomCharacter(chosenValues);
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector(password);
-  passwordText.value = finalPassword;
+  passwordText.value = Math.floor(Math.random()*chosenValues.length)
+  return passwordText
 
 }
 // Add event listener to generate button
